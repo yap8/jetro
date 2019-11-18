@@ -1,0 +1,105 @@
+.hero {
+	&__slider {
+		
+	}
+	&__slide {
+		margin-bottom: 17px;
+		background-color: $color-main;
+		background-position: center;
+		background-size: cover;
+		height: 400px;
+		position: relative;
+	}
+	&__slide-content {
+		padding: 20px;
+		max-width: 412px;
+		width: 80%;
+		position: absolute;
+		left: 36px;
+		bottom: 32px;
+		background-color: rgba($color-main, .8);
+	}
+	&__slide-title {
+		font-size: 18px;
+		color: #fff;
+		font-family: Bebas;
+		font-weight: 400;
+		margin-bottom: 10px;
+	}
+	&__slide-text {
+		font-size: 12px;
+		color: #fff;
+		font-family: HelveticaNeue;
+		line-height: 1.2;
+	}
+	&__arrows {
+		
+	}
+	&__prev,
+	&__next {
+		top: 157px;
+		position: absolute;
+		background-color: transparent;
+		border: 0;
+		cursor: pointer;
+	}
+	&__prev {
+		left: 25px;
+	}
+	&__next {
+		right: 25px;
+	}
+	&__prev-icon,
+	&__next-icon {
+		max-width: 36px;
+		max-height: 52px;
+		fill: rgba(#fff, .9);
+	}
+	&__prev-icon {
+
+	}
+	&__next-icon {
+		transform: rotate(180deg);
+	}
+	&__thumbnails {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__thumbnail {
+		max-width: 140px;
+		width: 15%;
+		height: 120px;
+		cursor: pointer;
+		border: 0;
+		background-position: center;
+		background-size: cover;
+		margin-bottom: 40px;
+		&.active {
+			transform: scale(1.1);
+		}
+		&:hover {
+			box-shadow: inset 0 0 0 10000px rgba(#000, .2);
+		}
+	}
+	@media (max-width: $mobile) {
+		&__thumbnails {
+			flex-wrap: wrap;
+		}
+		&__thumbnail {
+			max-width: 100%;
+			width: 31%;
+			margin-bottom: 20px;
+		}
+		&__prev {
+			left: 5px;
+		}
+		&__next {
+			right: 5px;
+		}
+	}
+	@media (max-width: $low-res) {
+		&__thumbnail {
+			height: 64px;
+		}
+	}
+}

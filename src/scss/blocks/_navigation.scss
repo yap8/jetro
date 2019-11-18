@@ -1,0 +1,21 @@
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	&__item {
+
+	}
+	&__link {
+		color: #B8B8B8;
+		font-family: Bebas;
+		&:hover {
+			color: $color-main;
+		}
+	}
+	@media (max-width: $mobile) {
+		&__link {
+			font-size: 18px;
+		}	
+	}
+}

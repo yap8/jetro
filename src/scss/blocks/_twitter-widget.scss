@@ -1,0 +1,26 @@
+.twitter-widget {
+	&__item {
+		margin-bottom: 10px;
+	}
+	&__username,
+	&__date {
+		opacity: .5;
+		color: #fff;
+		font-family: HelveticaNeue;
+		font-size: 12px;
+		&:hover {
+			text-decoration: underline;
+			opacity: 1;
+		}
+	}
+	&__text {
+		display: inline;
+		color: #fff;
+		font-family: HelveticaNeue;
+		font-size: 12px;
+	}
+	&__date {
+		margin-top: 5px;
+		display: block;
+	}
+}

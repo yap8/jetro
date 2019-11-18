@@ -1,0 +1,14 @@
+.social {
+	display: flex;
+	&__item {
+		&:not(:last-child) {
+			margin-right: 5px;
+		}
+	}
+	&__icon {
+		transition: transform .2s ease;
+	}
+	&__item:hover &__icon {
+		transform: scale(1.1);
+	}
+}
