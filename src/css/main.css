@@ -282,6 +282,7 @@ li {
   background-color: transparent;
   position: relative; }
   .toggle-navigation__span {
+    display: block;
     height: 4px;
     width: 100%;
     background-color: #E7653C;
