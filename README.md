@@ -2,4 +2,4 @@
 
 ### Todo
 * Add other pages
-* Remove jquery 
+* ~~Remove jquery~~ 
