@@ -2,6 +2,8 @@
   position: relative;
   &__list {
     margin-bottom: 17px;
+    height: 400px;
+    overflow: hidden;
 	}
 	&__list-item {
 		background-color: $color-main;
@@ -9,7 +11,16 @@
 		background-size: cover;
 		height: 400px;
 		position: relative;
-	}
+  }
+  &__list-item-image {
+    position: absolute;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 	&__list-item-content {
 		padding: 20px;
 		max-width: 412px;
@@ -17,8 +28,8 @@
 		position: absolute;
 		left: 36px;
 		bottom: 32px;
-		background-color: rgba($color-main, .8);
-	}
+    background-color: rgba($color-main, .8);
+  }
 	&__list-item-content-title {
 		font-size: 18px;
 		color: #fff;
