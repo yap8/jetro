@@ -1,0 +1,101 @@
+.hero-carousel {
+  position: relative;
+  &__list {
+    margin-bottom: 17px;
+	}
+	&__list-item {
+		background-color: $color-main;
+		background-position: center;
+		background-size: cover;
+		height: 400px;
+		position: relative;
+	}
+	&__list-item-content {
+		padding: 20px;
+		max-width: 412px;
+		width: 80%;
+		position: absolute;
+		left: 36px;
+		bottom: 32px;
+		background-color: rgba($color-main, .8);
+	}
+	&__list-item-content-title {
+		font-size: 18px;
+		color: #fff;
+		font-family: Bebas;
+		font-weight: 400;
+		margin-bottom: 10px;
+	}
+	&__list-item-content-text {
+		font-size: 12px;
+		color: #fff;
+		font-family: HelveticaNeue;
+		line-height: 1.2;
+	}
+	&__controls {
+		
+  }
+  &__controls-button {
+    top: 157px;
+    position: absolute;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    &--prev {
+      left: 25px;
+      @media (max-width: $mobile) {
+        &--prev {
+          left: 5px;
+        }
+      }
+    }
+    &--next {
+      right: 25px;
+      @media (max-width: $mobile) {
+        &--next {
+          left: 5px;
+        }
+      }
+    }
+  }
+  &__controls-button-icon {
+    fill: rgba(#fff, .9);
+    width: 36px;
+    height: 52px;
+    &--rotated {
+      transform: rotate(180deg);
+    }
+  }
+	&__thumbnails {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $mobile) {
+      flex-wrap: wrap;
+    }
+	}
+	&__thumbnails-item {
+    max-width: 140px;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    border: 0;
+		width: 15%;
+    height: 120px;
+    margin-bottom: 40px;
+    cursor: pointer;
+		&--active {
+      transform: scale(1.1);
+		}
+		&:hover {
+      box-shadow: inset 0 0 0 10000px rgba(#000, .2);
+    }
+    @media (max-width: $mobile) {
+      max-width: 100%;
+			width: 31%;
+			margin-bottom: 20px;
+    }
+    @media (max-width: $low-res) {
+      height: 64px;
+    }
+  }
+}
