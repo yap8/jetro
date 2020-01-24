@@ -3,3 +3,4 @@
 ### Todo
 * Add other pages
 * ~~Remove jquery~~ 
+* Improve accessibility
