@@ -10,35 +10,36 @@
 </head>
 <body>
 
-	<!-- Header -->
-	<header class="header">
-		<div class="header__inner container"> <!-- Container -->
-			<!-- Logo -->
-			<div class="header__logo">
+	<!-- header -->
+	<header class="section-header">
+		<div class="section-header__inner container">
+			<!-- logo -->
+			<div class="section-header__logo">
 				<a href="index.html" class="logo">
-					<div class="logo__text">Jet<span class="logo__span">ro</span></div>
+					<div class="logo__text">
+            <div class="logo__text-part">Jet</div>
+            <div class="logo__text-part logo__text-part--highlighted">ro</div>
+          </div>
 				</a>
 			</div>
-			<!-- Toggle navigation -->
-			<div class="header__toggle-navigation">
-				<button class="toggle-navigation">
-					<span class="toggle-navigation__span"></span>
-					<span class="toggle-navigation__span"></span>
-					<span class="toggle-navigation__span"></span>
-				</button>
+			<!-- nav -->
+			<div class="section-header__nav">
+        <nav class="nav">
+          <button class="nav__toggle-button" id="nav-toggle-button">
+            <span class="nav__toggle-button-particle"></span>
+            <span class="nav__toggle-button-particle"></span>
+            <span class="nav__toggle-button-particle"></span>
+          </button>
+          <ul class="nav__list" id="nav-list">
+            <li class="nav__list-item"><a href="index.html" class="nav__list-item-link">Home</a></li>
+            <li class="nav__list-item"><a href="about.html" class="nav__list-item-link">About us</a></li>
+            <li class="nav__list-item"><a href="blog.html" class="nav__list-item-link">Blog</a></li>
+            <li class="nav__list-item"><a href="portfolio.html" class="nav__list-item-link">Portfolio</a></li>
+            <li class="nav__list-item"><a href="contact.html" class="nav__list-item-link">Contact us</a></li>
+          </ul>
+        </nav>
 			</div>
-			<!-- Navigation -->
-			<nav class="header__navigation">
-				<ul class="navigation">
-					<!-- Item -->
-					<li class="navigation__item"><a href="index.html" class="navigation__link">Home</a></li>
-					<li class="navigation__item"><a href="#" class="navigation__link">About us</a></li>
-					<li class="navigation__item"><a href="#" class="navigation__link">Blog</a></li>
-					<li class="navigation__item"><a href="#" class="navigation__link">Portfolio</a></li>
-					<li class="navigation__item"><a href="#" class="navigation__link">Contact us</a></li>
-				</ul>
-			</nav>
-		</div> <!-- Container end -->
+		</div>
 	</header>
 
 	<!-- Page title -->
@@ -365,7 +366,7 @@
 
 	<!-- <script src="js/jquery.min.js"></script> -->
 	<!-- <script src="js/owl.carousel.min.js"></script> -->
-	<!-- <script src="js/main.js"></script> -->
+	<script src="js/main.js"></script>
 	
 </body>
 </html>

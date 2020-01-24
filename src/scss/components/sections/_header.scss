@@ -1,40 +1,17 @@
-.header {
-	&__inner {
-		height: 78px;
+.section-header {
+  &__inner {
+    height: 78px;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+    justify-content: space-between;
+    position: relative;
 	}
 	&__logo {
-		
+    height: 80%;
 	}
-	&__navigation {
+	&__nav {
+    height: 80%;
 		width: 100%;
 		max-width: 390px;
-	}
-	&__toggle-navigation {
-		display: none;
-	}
-	@media (max-width: $mobile) {
-		&__inner {
-			height: 92px;
-			position: relative;
-			z-index: 99;
-		}
-		&__navigation {
-			background-color: #fff;
-			max-width: 100%;
-			position: absolute;
-			bottom: -10px;
-			right: 0;
-			transition: max-height .2s ease;
-			display: none;
-			&--active {
-				display: block;
-			}
-		}
-		&__toggle-navigation {
-			display: block;
-		}
 	}
 }

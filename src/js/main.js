@@ -36,3 +36,15 @@
 // 	});
 // }
 // carousel();
+
+// Burger menu
+{
+  const toggleButton = document.querySelector('#nav-toggle-button')
+  const list = document.querySelector('#nav-list')
+
+  const toggleShowList = () => {
+    list.classList.toggle('nav__list--active')
+  }
+
+  toggleButton.addEventListener('click', toggleShowList)
+}
