@@ -14,12 +14,12 @@
 {
   Siema.prototype.addPagination = function() {
     const buttonsWrapper = document.querySelector('#hero-carousel-thumbnails')
-    const images = this.innerElements.map(item => item.querySelector('img').getAttribute('src'))
+    const images = this.innerElements.map(item => item.style.backgroundImage)
 
     const buttons = this.innerElements.map((element, i) => {
       const button = document.createElement('button');
       button.className = `hero-carousel__thumbnails-item${i === 0 ? ' hero-carousel__thumbnails-item--active' : ''}`
-      button.style.backgroundImage = `url(${images[i]})`
+      button.style.backgroundImage = images[i]
       
       button.addEventListener('click', () => this.goTo(i))
       
