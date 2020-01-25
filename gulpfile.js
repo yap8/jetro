@@ -27,7 +27,7 @@ const clean = () => {
 const html = () => {
   return gulp.src('src/*.html')
     .pipe(posthtml([
-      include()
+      include({ root: './src' })
     ]))
     .pipe(gulp.dest('dist'))
     .pipe(browserSync.stream())
