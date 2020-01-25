@@ -5,3 +5,4 @@
 * ~~Remove jquery~~ 
 * Improve accessibility
 * ~~Create a favicon~~
+* Use more includes
