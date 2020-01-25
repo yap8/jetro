@@ -57,9 +57,10 @@
     height: 100%;
 		color: #B8B8B8;
 		font-family: Bebas;
-		&:hover {
+    &:hover,
+    &--active {
       color: $color-main;
-		}
+    }
     @media (max-width: $mobile) {
       text-align: center;
       padding: 12px;
