@@ -45,10 +45,16 @@ const css = () => {
     .pipe(postcss(plugins))
     .pipe(gulp.dest('dist/css'))
     .pipe(browserSync.stream())
-  }
+}
   
 const js = () => {
 	return gulp.src('src/**/*.js')
+    .pipe(gulp.dest('dist'))
+    .pipe(browserSync.stream())
+}
+  
+const jsBuild = () => {
+  return gulp.src('src/**/*.js')
     .pipe(babel({
       presets: ['@babel/env']
     }))
@@ -57,7 +63,7 @@ const js = () => {
     }))
     .pipe(gulp.dest('dist'))
     .pipe(browserSync.stream())
-  }
+}
   
 const img = () => {
   return gulp.src(['src/img/**/*', 'src/images/**/*'])
@@ -96,4 +102,7 @@ gulp.task('ico', ico)
 gulp.task('fonts', fonts)
 gulp.task('watch', watch)
 
+gulp.task('jsBuild', jsBuild)
+
 gulp.task('default', gulp.series('clean', gulp.parallel('html', 'css', 'js', 'img', 'ico', 'fonts'), 'watch'))
+gulp.task('build', gulp.series('clean', gulp.parallel('html', 'css', 'jsBuild', 'img', 'ico', 'fonts')))
