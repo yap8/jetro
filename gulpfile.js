@@ -25,7 +25,7 @@ const clean = () => {
 }
 
 const html = () => {
-  return gulp.src('src/**/*.html')
+  return gulp.src('src/*.html')
     .pipe(posthtml([
       include()
     ]))
