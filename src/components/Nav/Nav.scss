@@ -1,7 +1,9 @@
 @import '../../scss/vars';
 
 .nav {
-  height: 100%;
+  height: 80%;
+  width: 100%;
+  max-width: 390px;
 	display: flex;
   justify-content: flex-end;
   &__toggle-button {

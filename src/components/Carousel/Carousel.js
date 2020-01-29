@@ -13,7 +13,7 @@ import { ReactComponent as ArrowIcon } from '../../images/svg/arrow.svg'
 const Carousel = () => {
   return (
     <div className="carousel">
-      <ul className="carousel__list" id="carousel-list">
+      <ul className="carousel__list">
         <li className="carousel__list-item" style={{backgroundImage: `url(${slideImageOne})`}}>
           <div className="carousel__list-item-content">
             <h4 className="carousel__list-item-content-title">Slide one</h4>
@@ -64,18 +64,18 @@ const Carousel = () => {
         </li>
       </ul>
       <div className="carousel__controls">
-        <button className="carousel__controls-button carousel__controls-button--prev" id="carousel-button-prev">
+        <button className="carousel__controls-button carousel__controls-button--prev">
           <span className="carousel__controls-button-icon">
             <ArrowIcon />
           </span>
         </button>
-        <button className="carousel__controls-button carousel__controls-button--next" id="carousel-button-next">
+        <button className="carousel__controls-button carousel__controls-button--next">
           <span className="carousel__controls-button-icon carousel__controls-button-icon--rotated">
             <ArrowIcon />
           </span>
         </button>
       </div>
-      <div className="carousel__thumbnails" id="carousel-thumbnails"></div>
+      <div className="carousel__thumbnails"></div>
     </div>
   )
 }
