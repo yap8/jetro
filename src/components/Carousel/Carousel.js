@@ -52,6 +52,7 @@ const Carousel = () => {
         {slides.map((item, index) =>
           <CarouselSlide 
             key={index}
+            index={index}
             image={item.image}
             title={item.title}
             text={item.text}
