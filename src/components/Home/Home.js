@@ -8,7 +8,7 @@ import Works from '../Works/Works'
 const Home = () => {
   return (
     <Fragment>
-      <PageTitle />
+      <PageTitle title={'home'} isHidden={true} />
       <Hero />
       <Features />
       <Works />
