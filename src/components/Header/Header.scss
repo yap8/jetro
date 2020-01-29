@@ -1,0 +1,17 @@
+.header {
+  &__inner {
+    height: 78px;
+		display: flex;
+		align-items: center;
+    justify-content: space-between;
+    position: relative;
+	}
+	&__logo {
+    height: 80%;
+	}
+	&__nav {
+    height: 80%;
+		width: 100%;
+		max-width: 390px;
+	}
+}

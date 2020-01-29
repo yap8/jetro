@@ -1,0 +1,25 @@
+@import '../../scss/vars';
+@import '../../scss/mixins';
+
+.page-title {
+	margin-bottom: 24px;
+	@include section-highlight;
+	&--hidden {
+		position: absolute;
+		width: 100%;
+		z-index: -999;
+	}
+	&__inner {
+		background-color: $color-main;
+		height: 61px;
+		display: flex;
+		align-items: center;
+		padding-left: 19px;
+	}
+	&__title {
+		font-weight: 400;
+		font-size: 24px;
+		color: #fff;
+		font-family: Bebas;
+	}
+}
