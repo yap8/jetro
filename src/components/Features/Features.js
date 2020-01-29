@@ -4,11 +4,12 @@ import './Features.scss'
 import { ReactComponent as GearIcon } from '../../images/svg/gear.svg'
 import { ReactComponent as CheckIcon } from '../../images/svg/check.svg'
 import { ReactComponent as PersonIcon } from '../../images/svg/person.svg'
+import InnerContainer from '../InnerContainer/InnerContainer'
 
 const Features = () => {
   return (  
     <section className="features">
-      <div className="features__inner container">
+      <InnerContainer className="features__inner">
         <ul className="features__items">
           <li className="features__item">
             <div className="features__item-header">
@@ -47,7 +48,7 @@ const Features = () => {
             <a href="https://github.com/arsenyNebozhenko" target="_blank" className="features__item-button">More</a>
           </li>
         </ul>
-      </div>
+      </InnerContainer>
     </section>
   )
 }
