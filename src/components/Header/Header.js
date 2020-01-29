@@ -1,16 +1,17 @@
 import React from 'react'
 import './Header.scss'
 
+import InnerContainer from '../InnerContainer/InnerContainer'
 import Logo from '../Logo/Logo'
 import Nav from '../Nav/Nav'
 
 const Header = () => {
   return (
     <header className="header">
-      <div className="header__inner container">
+      <InnerContainer className="header__inner">
         <Logo />
         <Nav />
-      </div>
+      </InnerContainer>
     </header>
   )
 }
