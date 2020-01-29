@@ -1,12 +1,12 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
 import PageTitle from '../PageTitle/PageTitle'
 
 const Blog = () => {
   return (
-    <Fragment>
+    <>
       <PageTitle title={'Blog'} />
-    </Fragment>
+    </>
   )
 }
 
