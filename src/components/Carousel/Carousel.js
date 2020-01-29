@@ -3,14 +3,14 @@ import './Carousel.scss'
 
 import CarouselSlides from './CarouselSlides'
 import CarouselControls from './CarouselControls'
-import CarouselThumbnails from './CarouselThumbnails'
+// import CarouselThumbnails from './CarouselThumbnails'
 
 const Carousel = () => {
   return (
     <div className="carousel">
       <CarouselSlides />
       <CarouselControls />
-      <CarouselThumbnails />
+      {/* <CarouselThumbnails /> */}
     </div>
   )
 }

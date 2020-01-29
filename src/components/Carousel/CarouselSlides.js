@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactSiema from 'react-siema'
 import './CarouselSlides.scss'
 
 import CarouselSlide from './CarouselSlide'
@@ -44,17 +45,21 @@ const CarouselSlides = () => {
     },
   ]
 
+  let slider
+
   return (
-    <ul className="carousel-slides">
-      {slides.map((item, index) => 
-        <CarouselSlide 
-          key={index}
-          image={item.image}
-          title={item.title}
-          text={item.text}
-        />
-      )}
-    </ul>
+    <div className="carousel-slides">
+      <ReactSiema>
+        {slides.map((item, index) =>
+          <CarouselSlide 
+            key={index}
+            image={item.image}
+            title={item.title}
+            text={item.text}
+          />
+        )}
+      </ReactSiema>
+    </div>
   )
 }
 
