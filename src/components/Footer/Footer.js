@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="footer__twitter-widget">
             <TwitterWidget />
           </div>
-          <div className="footer__follow">Follow <a href="#" className="footer__follow-link">@bestpsdfreebies</a></div>
+          <div className="footer__follow">Follow <a href="https://github.com/arsenynebozhenko" target="_blank" rel="noopener noreferrer" className="footer__follow-link">@bestpsdfreebies</a></div>
         </div>
         <div className="footer__col">
           <h4 className="footer__col-title">Contact us</h4>

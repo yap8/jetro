@@ -11,12 +11,12 @@ const Social = () => {
   return (
     <ul className="social">
       <li className="social__item">
-        <a href="https://www.facebook.com/" target="_blank" className="social__link">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="social__link">
           <img src={facebookIcon} alt="Facebook" className="social__icon" />
         </a>
       </li>
       <li className="social__item">
-        <a href="https://www.twitter.com/" target="_blank" className="social__link">
+        <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" className="social__link">
           <img src={twitterIcon} alt="Twitter" className="social__icon" />
         </a>
       </li>
@@ -31,7 +31,7 @@ const Social = () => {
         </a>
       </li>
       <li className="social__item">
-        <a href="https://www.vimeo.com/" target="_blank" className="social__link">
+        <a href="https://www.vimeo.com/" target="_blank" rel="noopener noreferrer" className="social__link">
           <img src={vimeoIcon} alt="Vimeo" className="social__icon" />
         </a>
       </li>
