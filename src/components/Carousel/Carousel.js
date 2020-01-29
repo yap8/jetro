@@ -22,7 +22,7 @@ const Carousel = () => {
             </div>
           </div>
         </li>
-        <li className="carousel__list-item" style={{backgroundImage: `url(${slideImageTwo})`}}>
+        <li className="carousel__list-item" style={{backgroundImage: `url(${slideImageTwo})`, display: 'none'}}>
           <div className="carousel__list-item-content">
             <h4 className="carousel__list-item-content-title">Slide two</h4>
             <div className="carousel__list-item-content-text">
@@ -30,7 +30,7 @@ const Carousel = () => {
             </div>
           </div>
         </li>
-        <li className="carousel__list-item" style={{backgroundImage: `url(${slideImageThree})`}}>
+        <li className="carousel__list-item" style={{backgroundImage: `url(${slideImageThree})`, display: 'none'}}>
           <div className="carousel__list-item-content">
             <h4 className="carousel__list-item-content-title">Slide three</h4>
             <div className="carousel__list-item-content-text">
@@ -38,7 +38,7 @@ const Carousel = () => {
             </div>
           </div>
         </li>
-        <li className="carousel__list-item" style={{backgroundImage: `url(${slideImageFour})`}}>
+        <li className="carousel__list-item" style={{backgroundImage: `url(${slideImageFour})`, display: 'none'}}>
           <div className="carousel__list-item-content">
             <h4 className="carousel__list-item-content-title">Slide four</h4>
             <div className="carousel__list-item-content-text">
@@ -46,7 +46,7 @@ const Carousel = () => {
             </div>
           </div>
         </li>
-        <li className="carousel__list-item" style={{backgroundImage: `url(${slideImageFive})`}}>
+        <li className="carousel__list-item" style={{backgroundImage: `url(${slideImageFive})`, display: 'none'}}>
           <div className="carousel__list-item-content">
             <h4 className="carousel__list-item-content-title">Slide five</h4>
             <div className="carousel__list-item-content-text">
@@ -54,7 +54,7 @@ const Carousel = () => {
             </div>
           </div>
         </li>
-        <li className="carousel__list-item" style={{backgroundImage: `url(${slideImageSix})`}}>
+        <li className="carousel__list-item" style={{backgroundImage: `url(${slideImageSix})`, display: 'none'}}>
           <div className="carousel__list-item-content">
             <h4 className="carousel__list-item-content-title">Slide six</h4>
             <div className="carousel__list-item-content-text">

@@ -1,16 +1,14 @@
 import React from 'react'
-import './Hero.scss'
 
 import Carousel from '../Carousel/Carousel'
+import InnerContainer from '../InnerContainer/InnerContainer'
 
 const Hero = () => {
   return (
-    <section className="hero">
-      <div className="hero__inner container">
-        <div className="hero__carousel">
-          <Carousel />
-        </div>
-      </div>
+    <section>
+      <InnerContainer>
+        <Carousel />
+      </InnerContainer>
     </section>  
   )
 }
