@@ -1,17 +1,16 @@
 import React from 'react'
 import './Works.scss'
 
-import WorksItems from '../WorksItems/WorksItems'
+import WorksItems from './WorksItems'
+import InnerContainer from '../InnerContainer/InnerContainer'
 
 const Works = () => {
   return (
     <section className="works">
-      <div className="works__inner container">
+      <InnerContainer className="works__inner">
         <h2 className="works__title">Recent works</h2>
-        <div className="works__items">
-          <WorksItems />
-        </div>
-      </div>
+        <WorksItems />
+      </InnerContainer>
     </section>
   )
 }
