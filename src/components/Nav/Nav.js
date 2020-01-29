@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import './Nav.scss'
 
 const Nav = () => {
@@ -10,11 +11,21 @@ const Nav = () => {
         <span className="nav__toggle-button-particle"></span>
       </button>
       <ul className="nav__list" id="nav-list">
-        <li className="nav__list-item"><a href="index.html" className="nav__list-item-link nav__list-item-link--active">Home</a></li>
-        <li className="nav__list-item"><a href="about.html" className="nav__list-item-link">About us</a></li>
-        <li className="nav__list-item"><a href="blog.html" className="nav__list-item-link">Blog</a></li>
-        <li className="nav__list-item"><a href="portfolio.html" className="nav__list-item-link">Portfolio</a></li>
-        <li className="nav__list-item"><a href="contact.html" className="nav__list-item-link">Contact us</a></li>
+        <li className="nav__list-item">
+          <NavLink exact to="/" activeClassName="nav__list-item-link--active" className="nav__list-item-link">Home</NavLink>
+        </li>
+        <li className="nav__list-item">
+          <NavLink to="/about" activeClassName="nav__list-item-link--active" className="nav__list-item-link">About us</NavLink>
+        </li>
+        <li className="nav__list-item">
+          <NavLink to="/blog" activeClassName="nav__list-item-link--active" className="nav__list-item-link">Blog</NavLink>
+        </li>
+        <li className="nav__list-item">
+          <NavLink to="/portfolio" activeClassName="nav__list-item-link--active" className="nav__list-item-link">Portfolio</NavLink>
+        </li>
+        <li className="nav__list-item">
+          <NavLink to="/contact" activeClassName="nav__list-item-link--active" className="nav__list-item-link">Contact us</NavLink>
+        </li>
       </ul>
     </nav>
   )
