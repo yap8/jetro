@@ -1,7 +1,10 @@
 .twitter-widget {
 	&__item {
 		margin-bottom: 10px;
-	}
+  }
+  &__username {
+    margin-right: .4rem;
+  }
 	&__username,
 	&__date {
 		opacity: .5;
